@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Destinations</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./flights.html">Manage Flights</a>
+            <a href="./destinations.html">Manage Destinations</a>
+            <a href="./bookings.html">Manage Bookings</a>
+        </nav>
+    </header>
+    <h1>Manage Destinations</h1>
+    <form id="addDestinationForm">
+        <input type="text" id="code" placeholder="Code" required>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="airportName" placeholder="Airport Name" required>
+        <input type="url" id="airportUrl" placeholder="Airport URL" required>
+        <input type="url" id="imageUrl" placeholder="Image URL" required>
+        <button type="submit">Add Destination</button>
+    </form>
+    <div id="message" class="alert" style="display: none;"></div>
+    <table id="destinationsTable">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Airport Name</th>
+                <th>Airport URL</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <footer>
+        <p>&copy; 2024 Task Management. All rights reserved.</p>
+    </footer>
+    <script src="./data/destinations.js" type="module"></script>
+</body>
+</html>

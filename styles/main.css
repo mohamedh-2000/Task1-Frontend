@@ -1,0 +1,105 @@
+/* עיצוב בסיסי */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* עיצוב כותרת עליונה ותחתונה */
+header, footer {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header a, footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/* עיצוב כותרת ראשית */
+h1 {
+    text-align: center;
+    color: #0056b3;
+    margin-top: 20px;
+}
+
+/* עיצוב טופס */
+form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+form input, form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #003d80;
+}
+
+/* עיצוב טבלה */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #0056b3;
+    color: #fff;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* עיצוב הודעות */
+.alert {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.alert.success {
+    background-color: #5cb85c;
+}
+
+.alert.error {
+    background-color: #d9534f;
+}

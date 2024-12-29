@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Bookings</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./flights.html">Manage Flights</a>
+            <a href="./destinations.html">Manage Destinations</a>
+            <a href="./bookings.html">Manage Bookings</a>
+        </nav>
+    </header>
+    <h1>Manage Bookings</h1>
+    <form id="bookFlightForm">
+        <select id="flightSelect">
+            <option value="">Select Flight</option>
+        </select>
+        <input type="number" id="numPassengers" placeholder="Number of Passengers" min="1" required>
+        <div id="passengerContainer"></div>
+        <button type="submit">Book Flight</button>
+    </form>
+    <div id="message" class="alert" style="display: none;"></div>
+    <table id="bookingsTable">
+        <thead>
+            <tr>
+                <th>Flight No.</th>
+                <th>Passenger Names</th>
+                <th>Passport IDs</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <footer>
+        <p>&copy; 2024 Task Management. All rights reserved.</p>
+    </footer>
+    <script src="./data/bookings.js" type="module"></script>
+</body>
+</html>
